@@ -1,0 +1,414 @@
+.neon {
+  overflow: hidden;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition:  .5s;
+}
+
+.neon:hover {
+  color: #0a1722;
+  background: #2196f3 ;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/HomePagePics/stars-background-img.jpg");
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav bar */
+
+.header {
+  position: fixed;
+  overflow: auto;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.5);}
+
+.header--nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  display: flex;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.header--nav--ul {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.065rem;
+  list-style-type: none;
+  padding-right: 1rem;
+}
+
+.header--nav--li:hover {
+  background: rgb(112, 110, 110);
+}
+
+/* Slideshow container */
+
+/* .slideshow-container {
+  margin: auto;
+  width: 40rem;
+  height: 50rem;
+  padding-top: 6.25rem;
+}
+
+.slideshow-con {
+  display: flex;
+  justify-content: center;
+  padding-top: 8.5rem;
+}
+
+.slideshow-img {
+  border: inset;
+} */
+
+/* First container */
+
+
+
+.cont--header {
+  text-align: center;
+  color: #66fcf1;
+  text-shadow: 0.188rem 0.188rem rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+
+
+.container--2 {
+  height: 37.5rem;
+  width: 90%;
+  /* background: url("Pictures/graybackpack.jpg") no-repeat center/cover; */
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: outset;
+  text-decoration: none;
+}
+
+/* Second container */
+
+.about-section{
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  background: url('/HomePagePics/Homepg-pic.jpg') no-repeat left;
+  background-size: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.inner-container {
+  width: 55%;
+  float: right;
+  background-color: #fdfdfd;
+  padding: 150px;
+}
+
+.inner-container:hover {
+  box-shadow: 0 0 10px #2196f2, 0 0 10px #2196f2;
+}
+
+.inner-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.text {
+  font-size: 13px;
+  color: #545454;
+  line-height: 30px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:1200px) {
+  .inner-container {
+    padding: 80px;
+  }
+}
+
+
+@media screen and (max-width:1000px) {
+.about-section {
+  background-size: 100%;
+  padding: 100px 40px;
+
+}
+  .inner-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:600px) {
+.about-section {
+  padding: 0;
+
+}
+  .inner-container {
+    padding: 60px;
+  }
+}
+
+
+
+/* Third container */
+.contact-section {
+  margin-top: 2rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  background: url('/HomePagePics/mountain-stars-img.jpg') no-repeat right;
+  background-size: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+
+
+
+
+
+/* Footer */
+
+#footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 3.438rem;
+  width: 100vw;
+  text-align: center;
+  border-top: 0.063rem solid #fff;
+}
+
+.footer--text {
+  width: 50%;
+  color: #fff;
+}
+
+.footer--socialLinks {
+  width: 40%;
+  color: #fff;
+  text-decoration: none;
+  justify-content: end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.social {
+  background: #f1f1f1 !important;
+  height: 90px;
+  width: 90px;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3489db;
+  overflow: hidden;
+}
+
+.social i {
+  width: 30px;
+  height: 30px;
+}
+
+.fab fa-github  {
+  width: 30px;
+  height: 30px;
+}
+
+.footer--a {
+  color: #fff;
+}
+
+/* Products page */
+
+#select {
+  padding-top: 5rem;
+  margin: auto;
+}
+
+#flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 6.5rem;
+  margin-bottom: 2rem;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+
+#flex-container img {
+  width: 12.5rem;
+  height: 12.5rem;
+  margin-top: 1.25rem;
+}
+
+#flex-container h3 {
+  color: black;
+}
+
+#flex-container p {
+  color: black;
+  text-align: left;
+  padding: 0.313rem;
+}
+
+.d1 {
+  background-color: #fff;
+  box-shadow: 0.438rem 0.438rem #2196f3;
+  height: 25rem;
+  width: 25%;
+  text-align: center;
+  margin: 0.625rem;
+}
+
+select {
+  margin-top: 6.25rem;
+}
+
+.grid__filter {
+  display: inline-block;
+  padding: 2rem;
+}
+
+/* Contact page */
+
+.l-heading {
+  color: #66fcf1;
+  font-size: 2.188rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+}
+
+#contact-form .from-group {
+  margin-bottom: 1.25rem;
+}
+
+#contact-form label {
+  display: block;
+}
+
+#contact-form input,
+#comtact-form textarea {
+  width: 100%;
+  padding: 0.625rem;
+  border: 0.063rem #ddd solid;
+  margin: 1.25rem 0rem;
+}
+
+#contact-form textarea {
+  height: 12.5rem;
+  width: 100%;
+  margin: 1.25rem 0rem;
+}
+
+#contact-form input:focus,
+#contactform textarea:focus {
+  outline: none;
+  border: 0.094rem solid #66fcf1;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  overflow: auto;
+  padding: 8.375rem 1.25rem;
+}
+
+label {
+  color: #fff;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 1.125rem;
+  color: #fff;
+  background: #333;
+  padding: 0.813rem 1.25rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.25rem;
+  margin-top: 0.625rem;
+}
+
+.btn:hover {
+  background: #66fcf1;
+  color: #333;
+}
+
+.validate {
+  font-size: 1rem;
+  color: red;
+}
+
+/* Media quiries */
+
+@media screen and (max-width: 53rem) and (max-height: 53rem) {
+  .slideshow-img {
+    width: 40rem;
+    height: 30rem;
+    margin-bottom: 0.625rem;
+  }
+  #container {
+    margin-top: 4rem;
+  }
+  nav {
+    width: 100%;
+  }
+  #slideshow-container {
+    padding-top: 10rem;
+  }
+  .container--2 {
+    width: 40rem;
+  }
+  .products--container {
+    width: 40rem;
+  }
+  .contact--container {
+    width: 40rem;
+  }
+  .l-heading {
+    margin-top: 4rem;
+  }
+  #footer {
+    width: 100%;
+  }
+  .d1 {
+    width: 60rem;
+    height: 18rem;
+  }
+  #flex-container img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+
+
