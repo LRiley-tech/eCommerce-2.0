@@ -66,7 +66,7 @@ class HomeBody extends React.Component {
     <div className="contact-section">
       <div className="inner-container">
         <h1>Contact us</h1>
-        <p className="text">If you have any questions for concerns, feel free to contact us!</p>
+        <p className="text">If you have any questions or concerns, feel free to contact us!</p>
         <Link className="homeButton" to="/Contact">Contact Us</Link>
       </div>
     </div>
