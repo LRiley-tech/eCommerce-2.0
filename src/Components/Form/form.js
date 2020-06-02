@@ -14,12 +14,14 @@ class Form extends React.Component {
   handleChange = (event) => {
     const isCheckbox = event.target.type === "checkbox";
     this.setState({
+      //Ternary operator
       [event.target.name]: isCheckbox
         ? event.target.checked
         : event.target.value,
     });
   };
 
+  // Checking if form requirements are met
   validate = () => {
     let nameError = "";
     let emailError = "";
@@ -29,7 +31,7 @@ class Form extends React.Component {
     }
 
     if (!this.state.email.includes("@")) {
-      emailError = "invalid email";
+      emailError = "Invalid email. Must contain @";
     }
 
     if (nameError || emailError) {
@@ -58,6 +60,7 @@ class Form extends React.Component {
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
                 <label for="name">Name</label>
+                <div className="validate">{this.state.nameError}</div>
                 <input
                   type="text"
                   name="name"
@@ -65,11 +68,11 @@ class Form extends React.Component {
                   value={this.state.name}
                   onChange={this.handleChange}
                 />
-                <div className="validate">{this.state.nameError}</div>
               </div>
 
               <div className="form-group">
                 <label for="email">Email</label>
+                <div className="validate">{this.state.emailError}</div>
                 <input
                   type="text"
                   name="email"
@@ -77,7 +80,6 @@ class Form extends React.Component {
                   value={this.state.email}
                   onChange={this.handleChange}
                 />
-                <div className="validate">{this.state.emailError}</div>
               </div>
 
               <div className="form-group">

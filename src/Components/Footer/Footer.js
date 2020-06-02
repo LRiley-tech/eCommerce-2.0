@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 class Footer extends React.Component {
   render() {
     return (
@@ -13,10 +13,8 @@ class Footer extends React.Component {
           <div className="footer--text">
             <p>
               &copy;{" "}
-              <a className="footer--a" href="index.html">
-                Leo's Backpacks
-              </a>
-            </p>
+              <Link className="footer--a" to="/">Leo's Backpacks</Link>
+              </p>
           </div>
 
           <div className="footer--socialLinks">

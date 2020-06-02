@@ -1,100 +1,103 @@
-        [
-            {
-                "name": "Tree Backpack",
-                "image": "ProductsPgPictures/blue-school-back-pack.jpg",
-                "description": "Description: Enjoy this fun tree backpack; a simple backpack for the school.",
-                "cost": "$24.99",
-                "type": "School",
-                "alt": "Tree Backpack",
-                "price": "medium"
-            },
-            {
-                "name": "Blue lightweight travel backpack",
-                "image": "ProductsPgPictures/suitcase-backpack.jpeg",
-                "cost": "Price: $30.00",
-                "description": "Description: Need a backpack for travel? This travel backpack might be for you, lightweight and affordable.",
-                "type": "Travel",
-                "alt": "Blue lightweight travel backpack",
-                "price": "medium"
-            },
-            {
-                "name": "Gray travel backpack",
-                "image": "ProductsPgPictures/travelbackpack.jpeg",
-                "cost": "Price: $34.95",
-                "description": "Description: This suitcase like backpack is great for traveling by airline.",
-                "type": "Travel",
-                "price": "medium"
-            },
-            {
-                "name": "Gray travel backpack",
-                "image": "ProductsPgPictures/manypockets-backpack.jpeg",
-                "cost": "Price: $44.99",
-                "description": "Description: Enjoy this lightweight travel backpack with many pockets.",
-                "type": "Travel",
-                "price": "high"
-            },
-            {
-                "name": "Dogpack",
-                "image": "ProductsPgPictures/dogpack.jpeg",
-                "cost": "Price: $24.99",
-                "description": "Description: Want to travel with your dog? Enjoy this dogpack made or small dogs.",
-                "type": "Pets",
-                "price": "medium"
-            },
-            {
-                "name": "Catpack",
-                "image": "ProductsPgPictures/catpack.jpg",
-                "cost": "Price: $24.99",
-                "description": " Description: Want to get your cat out more? Enjoy this catpack made for cats.",
-                "type": "Pets",
-                "price": "medium"
-            },
-            {
-                "name": "Castle crashers backpack",
-                "image": "ProductsPgPictures/castle-crashers-backpack.jpg",
-                "cost": "Price: $15.99",
-                "description": "Description: Cool flower backpack good for the school year.",
-                "type": "School",
-                "price": "low"
-            },
-            {
-                "name": "Hello Kitty backpack",
-                "image": "ProductsPgPictures/hellokitty-backpack.jpeg",
-                "cost": "Price: $14.64",
-                "description": "Description: Enjoy this fun pizza backpack. Best for the school year.",
-                "type": "School",
-                "price": "low"
-            },
-            {
-                "name": "Minecraft backpack",
-                "image": "ProductsPgPictures/minecraft-backpack.jpeg",
-                "cost": "Price: $14.64",
-                "description": "Description: A fun zebra design backpack great for the school year.",
-                "type": "School",
-                "price": "low"
-            },
-            {
-                "name": "Nike elite backetball backpack",
-                "image": "ProductsPgPictures/nikebasketball-backpack.jpeg",
-                "cost": "Price: $55.99",
-                "description": "Description: Great for teenagers who play backetball. This backpack provides a lot of space for what you might need when playing backetball.",
-                "type": "Sports",
-                "price": "high"
-            },
-            {
-                "name": "Golf backpack",
-                "image": "ProductsPgPictures/golf-backpack.jpg",
-                "cost": "Price: $67.99",
-                "description": "Description: Are you a golfer? Use this backpack to help you carry those heavy golf clubs.",
-                "type": "Sports",
-                "price": "very-high"
-            },
-            {
-                "name": "Red hiking backpack",
-                "image": "ProductsPgPictures/hiking-backpack.jpeg",
-                "cost": "Price: $55.95",
-                "description": "Description: Enjoy this backpack great for long or overnight hikes.",
-                "type": "Sports",
-                "price": "high"
-            }
-        ]
+{
+    "products": [
+        {
+            "name": "Tree Backpack",
+            "image": "ProductsPgPictures/blue-school-back-pack.jpg",
+            "description": "Description: Enjoy this cool neon black backpack for school.",
+            "cost": "$24.99",
+            "type": "School",
+            "alt": "Black backpack",
+            "price": "medium"
+        },
+        {
+            "name": "Blue lightweight travel backpack",
+            "image": "ProductsPgPictures/travel-pack.jpg",
+            "cost": "Price: $30.00",
+            "description": "Description: Need a backpack for travel? This travel backpack might be for you, lightweight and affordable.",
+            "type": "Travel",
+            "alt": "Blue lightweight travel backpack",
+            "price": "medium"
+        },
+        {
+            "name": "Gray travel backpack",
+            "image": "ProductsPgPictures/travelbackpack.jpeg",
+            "cost": "Price: $34.95",
+            "description": "Description: This suitcase like backpack is great for traveling by airline.",
+            "type": "Travel",
+            "price": "medium"
+        },
+        {
+            "name": "Gray travel backpack",
+            "image": "ProductsPgPictures/manypockets-backpack.jpeg",
+            "cost": "Price: $44.99",
+            "description": "Description: Enjoy this lightweight travel backpack with many pockets.",
+            "type": "Travel",
+            "price": "high"
+        },
+        {
+            "name": "Dogpack",
+            "image": "ProductsPgPictures/dog-pack.jpg",
+            "cost": "Price: $24.99",
+            "description": "Description: Want to travel with your dog? Enjoy this dogpack made or small dogs.",
+            "type": "Pets",
+            "price": "medium"
+        },
+        {
+            "name": "Catpack",
+            "image": "ProductsPgPictures/catpack.jpg",
+            "cost": "Price: $24.99",
+            "description": " Description: Want to get your cat out more? Enjoy this catpack made for cats.",
+            "type": "Pets",
+            "price": "medium"
+        },
+        {
+            "name": "Castle crashers backpack",
+            "image": "ProductsPgPictures/castle-crashers-backpack.jpg",
+            "cost": "Price: $15.99",
+            "description": "Description: Are you a fan of castle crashers? You might enjoy this backpack for school.",
+            "type": "School",
+            "price": "low"
+        },
+        {
+            "name": "Hello Kitty backpack",
+            "image": "ProductsPgPictures/hellokitty-backpack.jpeg",
+            "cost": "Price: $14.64",
+            "description": "Description: Enjoy this kid friendly hello kitty backpack.",
+            "type": "School",
+            "price": "low"
+        },
+        {
+            "name": "Minecraft backpack",
+            "image": "ProductsPgPictures/minecraft-backpack.jpeg",
+            "cost": "Price: $14.64",
+            "description": "Description: Minecraft fans will enjoy this backpack.",
+            "type": "School",
+            "price": "low"
+        },
+        {
+            "name": "Nike elite backetball backpack",
+            "image": "ProductsPgPictures/nikebasketball-backpack.jpeg",
+            "cost": "Price: $55.99",
+            "description": "Description: Great for teenagers who play backetball. This backpack provides a lot of space for what you might need when playing backetball.",
+            "type": "Sports",
+            "price": "high"
+        },
+        {
+            "name": "Golf backpack",
+            "image": "ProductsPgPictures/golf-backpack.jpg",
+            "cost": "Price: $67.99",
+            "description": "Description: Are you a golfer? Use this backpack to help you carry those heavy golf clubs.",
+            "type": "Sports",
+            "price": "very-high"
+        },
+        {
+            "name": "Red hiking backpack",
+            "image": "ProductsPgPictures/hiking-backpack.jpeg",
+            "cost": "Price: $55.95",
+            "description": "Description: Enjoy this backpack great for long or overnight hikes.",
+            "type": "Sports",
+            "price": "high"
+        }
+    ]
+}
+

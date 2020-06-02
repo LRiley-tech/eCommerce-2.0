@@ -1,16 +1,3 @@
-.neon {
-  overflow: hidden;
-  padding: 1rem 2rem;
-  text-decoration: none;
-  transition:  .5s;
-}
-
-.neon:hover {
-  color: #0a1722;
-  background: #2196f3 ;
-  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -25,12 +12,12 @@ a {
   text-decoration: none;
 }
 
-/* Nav bar */
+/* Navbar */
 
 .header {
   position: fixed;
   overflow: auto;
-  width: 100%;
+  width: 100vw;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);}
 
@@ -60,63 +47,36 @@ nav a {
   background: rgb(112, 110, 110);
 }
 
-/* Slideshow container */
-
-/* .slideshow-container {
-  margin: auto;
-  width: 40rem;
-  height: 50rem;
-  padding-top: 6.25rem;
+/* Glowing buttons */
+.neon {
+  overflow: hidden;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  transition:  .5s;
 }
 
-.slideshow-con {
-  display: flex;
-  justify-content: center;
-  padding-top: 8.5rem;
+.neon:hover {
+  color: #0a1722;
+  background: #2196f3 ;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
 
-.slideshow-img {
-  border: inset;
-} */
 
 /* First container */
 
-
-
-.cont--header {
-  text-align: center;
-  color: #66fcf1;
-  text-shadow: 0.188rem 0.188rem rgba(0, 0, 0, 0.5);
-  font-size: 2.5rem;
-  font-family: "Courier New", Courier, monospace;
+.container {
+  margin: auto;
+  width: 100%;
+  overflow: auto;
+  padding: 4.375rem 1.25rem;
 }
 
-.homeButton {
-  border: 1px solid;
-  font-size: 20px;
-  text-decoration: none;
-  color: #0a1722;
+.slide-img {
+  width:100%;
+  height: 700px;
 }
 
-.homeButton:hover {
-  box-shadow: 0 0 10px #2196f3, 0 0 80px #2196f3, 0 0 120px #2196f3;
-}
-
-
-
-.container--2 {
-  height: 37.5rem;
-  width: 90%;
-  /* background: url("Pictures/graybackpack.jpg") no-repeat center/cover; */
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border: outset;
-  text-decoration: none;
-}
-
-/* Second container */
+/* Second container ~ Home page*/
 
 .about-section{
   min-width: 100vw;
@@ -127,7 +87,7 @@ nav a {
   background: url('/HomePagePictures/Homepg-pic.jpg') no-repeat left;
   background-size: 100%;
   overflow: hidden;
-  padding: 100px 0;
+  padding: 90px 0;
 }
 
 .inner-container {
@@ -152,6 +112,51 @@ nav a {
   margin-bottom: 40px;
 }
 
+
+/* Third container ~ Home Page*/
+.contact-section {
+  margin-top: 2rem;
+  min-width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  background: url('/HomePagePictures/mountains-stars-background.jpg') no-repeat right;
+  background-size: 100%;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+
+/* Home page media queries */
+
+@media screen and (max-width: 53rem) and (max-height: 53rem) {
+
+
+  .container--2 {
+    width: 40rem;
+  }
+  .products--container {
+    width: 40rem;
+  }
+  .contact--container {
+    width: 40rem;
+  }
+  .l-heading {
+    margin-top: 4rem;
+  }
+ 
+  .d1 {
+    width: 60rem;
+    height: 18rem;
+  }
+  #flex-container img {
+    height: 5rem;
+    width: 5rem;
+  }
+}
+
+
 @media screen and (max-width:1200px) {
   .inner-container {
     padding: 80px;
@@ -159,15 +164,87 @@ nav a {
 }
 
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:1024px) {
 .about-section {
   background-size: 100%;
+}
 
+.d1{
+  width: 40% !important;
 }
   .inner-container {
     width: 100%;
   }
+  .footer--socialLinks {
+    padding-right: 150px !important;
+  }
+  .container {
+    padding: 8.375rem 1.25rem;
+    height: 950px;
+  }
 }
+
+@media screen and (max-width:667px) {
+  .header--nav {
+    width: 100%;
+  }
+  .logo{
+    display: none;
+  }
+  .header--nav--ul{
+    margin-left: 55px;
+  }
+  .footer--socialLinks {
+    padding-right: 50px !important;
+  }
+  .slide-img {
+    height: 350px;
+  }
+  .about-section{
+    background: none;
+  }
+  .d1{
+    width: 100% !important;
+  }
+  .grid__filter {
+    padding: 0 !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.cont--header {
+  text-align: center;
+  color: #66fcf1;
+  text-shadow: 0.188rem 0.188rem rgba(0, 0, 0, 0.5);
+  font-size: 2.5rem;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.homeButton {
+  border: 1px solid;
+  font-size: 20px;
+  text-decoration: none;
+  color: #0a1722;
+}
+
+.homeButton:hover {
+  box-shadow: 0 0 10px #2196f3, 0 0 80px #2196f3, 0 0 120px #2196f3;
+}
+
+
+
+
+
 
 /* @media screen and (max-width:768px) {
 .about-section {
@@ -184,26 +261,26 @@ nav a {
 } */
 
 
-@media screen and (max-width:768px) {
-
+select {
+  appearance: none;
+  outline: 0;
+  border: 0!important;
+  color: #fff;
+  cursor: pointer;
 }
 
+select::-ms-expand {
+  display: none;
+}
 
-/* Third container */
-.contact-section {
-  margin-top: 2rem;
-  min-width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #f1f1f1;
-  background: url('/HomePagePictures/mountains-stars-background.jpg') no-repeat right;
-  background-size: 100%;
+.select {
+  width: 7rem;
+  height: 1.5rem;
+  line-height: 2;
+  background: #306ba7;
   overflow: hidden;
-  padding: 100px 0;
+  border-radius: .25rem;
 }
-
 
 
 
@@ -233,7 +310,7 @@ nav a {
   justify-content: end;
   flex-direction: row;
   align-items: center;
-  padding-right: 300px;
+  padding-right: 250px;
 }
 
 .social {
@@ -291,6 +368,8 @@ nav a {
   width: 25%;
   text-align: center;
   margin: 0.625rem;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
 }
 
 select {
@@ -340,12 +419,7 @@ select {
   border: 0.094rem solid #66fcf1;
 }
 
-.container {
-  margin: auto;
-  width: 100%;
-  overflow: auto;
-  padding: 8.375rem 1.25rem;
-}
+
 
 label {
   color: #fff;
@@ -385,47 +459,9 @@ label {
 
 
 
-/* Media quiries */
 
-@media screen and (max-width: 53rem) and (max-height: 53rem) {
-  .slideshow-img {
-    width: 40rem;
-    height: 30rem;
-    margin-bottom: 0.625rem;
-  }
-  #container {
-    margin-top: 4rem;
-  }
-  nav {
-    width: 100%;
-  }
-  #slideshow-container {
-    padding-top: 10rem;
-  }
-  .container--2 {
-    width: 40rem;
-  }
-  .products--container {
-    width: 40rem;
-  }
-  .contact--container {
-    width: 40rem;
-  }
-  .l-heading {
-    margin-top: 4rem;
-  }
-  #footer {
-    width: 100%;
-  }
-  .d1 {
-    width: 60rem;
-    height: 18rem;
-  }
-  #flex-container img {
-    height: 5rem;
-    width: 5rem;
-  }
-}
+
+
 
 
 

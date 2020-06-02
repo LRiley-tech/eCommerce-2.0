@@ -48,7 +48,7 @@ class HomeBody extends React.Component {
           {photos.map((photos) => {
             return(
               <div>
-                <img width="100%" height="700rem" src={photos.url} alt="photos" />
+                <img className="slide-img" src={photos.url} alt="photos" />
               </div>
             )
           })}
@@ -58,7 +58,7 @@ class HomeBody extends React.Component {
     <div className="about-section">
       <div className="inner-container">
         <h1>About us</h1>
-        <p className="text">Here at Leo's backpacks, we strive to bring you a varity of backpacks to choose from. To learn more about what we offer; check out our products page and explore.</p>
+        <p className="text">Here at Leo's backpacks, we strive to bring you a variety of backpacks to choose from. To learn more about what we offer; check out our products page and explore.</p>
         <Link className="homeButton" to="/Products">Products</Link>
       </div>
     </div>
