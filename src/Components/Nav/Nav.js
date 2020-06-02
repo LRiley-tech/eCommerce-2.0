@@ -16,7 +16,7 @@ export default function Links() {
                 <Link className="neon" to="/">Home</Link>
               </li>
               <li>
-                <Link className="neon" to="/Products">Shop now</Link>
+                <Link className="neon" to="/Products">Shop Now</Link>
               </li>
               <li className="header--nav--li">
                 <Link className="neon" to="/Contact">Contact</Link>
