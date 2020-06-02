@@ -3,7 +3,7 @@ import Nav from '../Nav/Nav';
 import Footer from '../Footer/Footer';
 import Filter from '../Filter/Filters'
 
-class Backpacks extends React.Component {
+class ProductsPg extends React.Component {
   render() {
     return (
       <div>
@@ -15,4 +15,4 @@ class Backpacks extends React.Component {
   }
 }
 
-export default Backpacks;
+export default ProductsPg;

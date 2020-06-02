@@ -18,7 +18,7 @@
 }
 
 body {
-  background: url("/HomePagePics/stars-background-img.jpg");
+  background: url("/HomePagePictures/stars-background-img.jpg");
 }
 
 a {
@@ -91,6 +91,17 @@ nav a {
   font-family: "Courier New", Courier, monospace;
 }
 
+.homeButton {
+  border: 1px solid;
+  font-size: 20px;
+  text-decoration: none;
+  color: #0a1722;
+}
+
+.homeButton:hover {
+  box-shadow: 0 0 10px #2196f3, 0 0 80px #2196f3, 0 0 120px #2196f3;
+}
+
 
 
 .container--2 {
@@ -109,12 +120,11 @@ nav a {
 
 .about-section{
   min-width: 100vw;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
-  background: url('/HomePagePics/Homepg-pic.jpg') no-repeat left;
+  background: url('/HomePagePictures/Homepg-pic.jpg') no-repeat left;
   background-size: 100%;
   overflow: hidden;
   padding: 100px 0;
@@ -125,10 +135,7 @@ nav a {
   float: right;
   background-color: #fdfdfd;
   padding: 150px;
-}
-
-.inner-container:hover {
-  box-shadow: 0 0 10px #2196f2, 0 0 10px #2196f2;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .inner-container h1 {
@@ -152,10 +159,9 @@ nav a {
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:768px) {
 .about-section {
   background-size: 100%;
-  padding: 100px 40px;
 
 }
   .inner-container {
@@ -163,7 +169,7 @@ nav a {
   }
 }
 
-@media screen and (max-width:600px) {
+/* @media screen and (max-width:768px) {
 .about-section {
   padding: 0;
 
@@ -171,8 +177,16 @@ nav a {
   .inner-container {
     padding: 60px;
   }
-}
 
+  .container {
+    width: 90%
+  }
+} */
+
+
+@media screen and (max-width:768px) {
+
+}
 
 
 /* Third container */
@@ -184,7 +198,7 @@ nav a {
   align-items: center;
   justify-content: center;
   background-color: #f1f1f1;
-  background: url('/HomePagePics/mountain-stars-img.jpg') no-repeat right;
+  background: url('/HomePagePictures/mountains-stars-background.jpg') no-repeat right;
   background-size: 100%;
   overflow: hidden;
   padding: 100px 0;
@@ -203,7 +217,7 @@ nav a {
   align-items: center;
   height: 3.438rem;
   width: 100vw;
-  text-align: center;
+  text-align: end;
   border-top: 0.063rem solid #fff;
 }
 
@@ -213,34 +227,25 @@ nav a {
 }
 
 .footer--socialLinks {
-  width: 40%;
+  width: 100%;
   color: #fff;
   text-decoration: none;
   justify-content: end;
   flex-direction: row;
   align-items: center;
+  padding-right: 300px;
 }
 
 .social {
-  background: #f1f1f1 !important;
   height: 90px;
   width: 90px;
   margin: 10px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
-  color: #3489db;
+  color: #fff;
   overflow: hidden;
 }
 
-.social i {
-  width: 30px;
-  height: 30px;
-}
-
-.fab fa-github  {
-  width: 30px;
-  height: 30px;
-}
 
 .footer--a {
   color: #fff;
@@ -367,6 +372,18 @@ label {
   font-size: 1rem;
   color: red;
 }
+
+.fas, fa-hiking {
+  color: #fff;
+  display: flex;
+
+}
+.fa-hiking:before {
+  width: 40px;
+  height: 40px;
+}
+
+
 
 /* Media quiries */
 

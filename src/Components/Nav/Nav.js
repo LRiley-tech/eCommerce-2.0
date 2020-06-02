@@ -7,6 +7,7 @@ export default function Links() {
           <div>
         <header className="header">
           <nav className="header--nav">
+          <i class="fas fa-hiking"></i>
             <h2 className="logo">
               <Link to="/">Leo's Backpacks</Link>
             </h2>
@@ -15,7 +16,7 @@ export default function Links() {
                 <Link className="neon" to="/">Home</Link>
               </li>
               <li>
-                <Link className="neon" to="/Backpack">Shop now</Link>
+                <Link className="neon" to="/Products">Shop now</Link>
               </li>
               <li className="header--nav--li">
                 <Link className="neon" to="/Contact">Contact</Link>
