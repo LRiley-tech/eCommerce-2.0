@@ -20,7 +20,7 @@
         },
         {
             "name": "Gray travel backpack",
-            "image": "ProductsPgPictures/travelbackpack.jpeg",
+            "image": "ProductsPgPictures/suitcase-backpack.jpeg",
             "cost": "Price: $34.95",
             "description": "Description: This suitcase like backpack is great for traveling by airline.",
             "type": "Travel",

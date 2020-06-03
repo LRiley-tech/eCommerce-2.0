@@ -8,7 +8,7 @@ export default function Links() {
         <header className="header">
           <nav className="header--nav">
           <Link to="/"><i class="fas fa-hiking"></i></Link>
-          
+
             <h2 className="logo">
               <Link to="/">Leo's Backpacks</Link>
             </h2>
