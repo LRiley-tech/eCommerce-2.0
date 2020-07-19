@@ -6,6 +6,7 @@ const defaultState = {
   message: "",
   nameError: "",
   emailError: "",
+  messageError: ""
 };
 
 class Form extends React.Component {
@@ -25,6 +26,7 @@ class Form extends React.Component {
   validate = () => {
     let nameError = "";
     let emailError = "";
+    let messageError = "";
 
     if (!this.state.name) {
       nameError = "Name cannot be blank";
@@ -34,8 +36,12 @@ class Form extends React.Component {
       emailError = "Invalid email. Must contain @";
     }
 
-    if (nameError || emailError) {
-      this.setState({ nameError, emailError });
+    if (!this.state.message) {
+      messageError = "Message required";
+    }
+
+    if (nameError || emailError || messageError) {
+      this.setState({ nameError, emailError, messageError });
       return false;
     }
 
@@ -43,12 +49,13 @@ class Form extends React.Component {
   };
 
   handleSubmit = event => {
-    event.preventDefault();
     const isValid = this.validate();
     if (isValid) {
       console.log(this.state);
       //Clearing form
     this.setState(defaultState);
+    } else {
+      event.preventDefault();
     }
   };
   render() {
@@ -57,7 +64,7 @@ class Form extends React.Component {
         <section id="contact-form" className="py-3">
           <div className="container">
             <h1 className="l-heading">Contact Us</h1>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} action="https://formsubmit.co/lecoding@altmails.com" method="POST" target="_blank" rel="noopener noreferrer">
               <div className="form-group">
                 <label for="name">Name</label>
                 <div className="validate">{this.state.nameError}</div>
@@ -82,11 +89,15 @@ class Form extends React.Component {
                 />
               </div>
 
+              <div className="validate" style={{ color: "#e4428e", width: "50%" }}>{this.state.messageError}</div>
+
               <div className="form-group">
                 <label for="message">Message</label>
                 <textarea
                   placeholder="We would love to hear your feedback!"
                   name="message"
+                  value={this.state.message}
+                  onChange={this.handleChange}
                 ></textarea>
               </div>
 
