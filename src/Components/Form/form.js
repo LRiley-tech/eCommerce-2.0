@@ -53,7 +53,7 @@ class Form extends React.Component {
     if (isValid) {
       console.log(this.state);
       //Clearing form
-    this.setState(defaultState);
+    // this.setState(defaultState);
     } else {
       event.preventDefault();
     }
@@ -64,7 +64,7 @@ class Form extends React.Component {
         <section id="contact-form" className="py-3">
           <div className="container">
             <h1 className="l-heading">Contact Us</h1>
-            <form onSubmit={this.handleSubmit} action="https://formsubmit.co/lecoding@altmails.com" method="POST" target="_blank" rel="noopener noreferrer">
+            <form onSubmit={this.handleSubmit} action="https://formsubmit.co/lecoding@altmails.com" method="POST">
               <div className="form-group">
                 <label for="name">Name</label>
                 <div className="validate">{this.state.nameError}</div>
