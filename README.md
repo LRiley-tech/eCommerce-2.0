@@ -1,5 +1,5 @@
 ## eCommerce 2.0
-This was the second iteration of the eCommerce website we worked on through out the Road to Hire Program. We were tasked to convet our previous static eCommerce website to a React app. We learned how to use class and functional compoenents and learned how manipulate the virtual DOM of our eCommerce website.
+This was the second iteration of the eCommerce website we worked on through out the Road to Hire Program. We were tasked to convet our previous static eCommerce website to a React app. We learned how to use class and functional components and learned how manipulate the virtual DOM of our eCommerce website.
 
 ## Cloning the website
 Download or clone this repoistory onto your computer. Once that is complete, you will need to install the node packages that were used to build this application. Yoiu can download the packages by running `npm i` in your terminal. 
