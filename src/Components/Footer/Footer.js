@@ -7,6 +7,7 @@ class Footer extends React.Component {
         <head>
         </head>
           <footer id="footer">
+              <script src="https://use.fontawesome.com/740dccf130.js"></script>
           <div className="footer--text">
             <p>
               &copy;{" "}
